@@ -1,6 +1,6 @@
 #! /usr/bin/python
 #Author: jcastelo on 240218
-
+#udapted by yerim 
 a = 4
 b = 27
 
@@ -9,7 +9,7 @@ resta = (a - b)
 multp = (a * b)
 div = float(a) / float(b)
 
-#SI a<b el resultado  sera siempre a
+#SI a<b el resultado  sera siempre el valor de a
 
 porc = (a % b)
 
