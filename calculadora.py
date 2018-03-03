@@ -8,6 +8,8 @@ suma = (a + b)
 resta = (a - b)
 multp = (a * b)
 div = float(a) / float(b)
+
+#SI a<b el resultado sera a
 porc = (a % b)
 
 #Estamos utiizanco str() para poder mostrar el resultado en pantalla ya que estamos concatenando cadenas
