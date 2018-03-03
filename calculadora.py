@@ -1,6 +1,6 @@
 #! /usr/bin/python
 #Author: jcastelo on 240218
-
+#udapted by yerim 
 a = 4
 b = 27
 
