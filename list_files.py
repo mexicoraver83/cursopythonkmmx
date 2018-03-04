@@ -6,8 +6,10 @@
 import os
 
 path = raw_input("Enter the desire path to evaluate: ")
+
+# Here we are removing the space at the end after dragging the path from finder
 path = path.rstrip()
-#print path
+
 # Here we are listing the content in the directory
 
 for f in os.listdir(path):
