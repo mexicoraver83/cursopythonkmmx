@@ -1,4 +1,6 @@
 #! /usr/bin/python
+# -*- encoding: utf-8 -*-
+
 #Author: jcastelo on 030318
 
 mi_lista = ['cadena de texto', 15, 2.8, 'otro dato', 25]
