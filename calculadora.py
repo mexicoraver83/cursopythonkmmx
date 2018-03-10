@@ -1,4 +1,5 @@
 #! /usr/bin/python
+# -*- encoding: utf-8 -*-
 #Author: jcastelo on 240218
 #udapted by yerim 
 a = 4
