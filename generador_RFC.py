@@ -22,8 +22,8 @@ segundo_termino = second_ln[ :1]
 
 if len(str(second_name)) == 0:
 	tercer_termino = first_name[ :1]
-#	print "Test"
-elif first_name == "jose" or "maria":
+	print "Test"
+elif first_name == "jose" or first_name == "maria":
 	tercer_termino = second_name[ :1]
 else:
 	tercer_termino = first_name[ :1]
@@ -48,10 +48,10 @@ else:
 # Evaluando lista prohibida
 
 initial_evaluation = str.upper(primer_termino) + str.upper(segundo_termino) + str.upper(tercer_termino)
-print initial_evaluation
+#print initial_evaluation
 
 check = initial_evaluation in prohibit_list
-print check
+#print check
 
 if check == True:
 	initial_evaluation = str.upper(primer_termino) + str.upper(segundo_termino) + 'X'
