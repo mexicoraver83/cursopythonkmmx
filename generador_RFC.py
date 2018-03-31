@@ -7,33 +7,60 @@
 
 # La segnda letra no puede ser vocal en el primer apellido
 
+
 while True:
 	first_name = raw_input("Ingrese su primer nombre completo: ")
 	if len(first_name) > 0:
+		if first_name.isalpha():
+			break
+		else:
+			print("\033[93mLAME...! NO SE ACEPTAN CARACTERES NUMERICOS...INGRESE SOLO CARACTERES ALFABETICOS\033[0m")
+while True:
+	second_name = raw_input("Ingrese su segundo nombre completo (presione enter si no tiene): ")
+	if second_name.isalpha():
 		break
-
-second_name = raw_input("Ingrese su segundo nombre completo (presione enter si no tiene): ")
+	else:
+		print "\033[93mLAME...! NO SE ACEPTAN CARACTERES NUMERICOS...INGRESE SOLO CARACTERES ALFABETICOS\033[0m"
 
 while True:
  	first_ln = raw_input("Ingrese su primer apellido: ")
  	if len(first_ln) > 0:
- 		break
+ 		if first_ln.isalpha():
+ 			break
+ 		else:
+ 			print "\033[93mLAME...! NO SE ACEPTAN CARACTERES NUMERICOS...INGRESE SOLO CARACTERES ALFABETICOS\033[0m"
+
 while True:
 	second_ln = raw_input("Ingrese su segundo apellido: ")
 	if len(second_ln) > 0:
-		break
+		if second_ln.isalpha():
+			break
+		else:
+			print "\033[93mLAME...! NO SE ACEPTAN CARACTERES NUMERICOS...INGRESE SOLO CARACTERES ALFABETICOS\033[0m"
+
 while True:
 	year = raw_input("Ingrese su anho de nacimiento: ")
 	if len(year) > 0:
-		break
+		if year.isdigit():
+			break
+		else:
+			print "\033[93mLAME...! NO SE ACEPTAN CARACTERES ALFABETICOS...INGRESE SOLO CARACTERES NUMERICOS\033[0m"
+
 while True:
 	mes = raw_input("Ingrese su mes de nacimiento: ")
 	if len(mes) > 0:
-		break
+		if mes.isdigit():
+			break
+		else:
+			print "\033[93mLAME...! NO SE ACEPTAN CARACTERES ALFABETICOS...INGRESE SOLO CARACTERES NUMERICOS\033[0m"
+
 while True:
 	dia = raw_input("Ingrese su dia de nacimiento: ")
 	if len(dia) > 0:
-		break
+		if dia.isdigit():
+			break
+		else:
+			print "\033[93mLAME...! NO SE ACEPTAN CARACTERES ALFABETICOS...INGRESE SOLO CARACTERES NUMERICOS\033[0m"
 
 homoclave = "xxx"
 
@@ -89,7 +116,7 @@ else:
 	initial_evaluation = str.upper(primer_termino) + str.upper(segundo_termino) + str.upper(tercer_termino)
 
 #RFC PRINT
-print 'Tu RFC es: ' + initial_evaluation + str(cuarto_termino) + str(quinto_termino) + str(sexto_termino) + str.upper(homoclave)
+print '\033[94;4m' + 'Tu RFC es: ' + initial_evaluation + str(cuarto_termino) + str(quinto_termino) + str(sexto_termino) + str.upper(homoclave)
 
 ###############################################################
 # Check this later if you want to evalaute based  on indexing #
