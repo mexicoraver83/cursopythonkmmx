@@ -2,10 +2,8 @@
 # -*- encoding: utf-8 -*-
 
 # Generador de RFC
-
-# To do list:
-
-# La segnda letra no puede ser vocal en el primer apellido
+# TO DO LIST:
+# La segunda letra no puede ser vocal en el primer apellido
 
 
 while True:
@@ -63,15 +61,12 @@ while True:
 			print "\033[93mLAME...! NO SE ACEPTAN CARACTERES ALFABETICOS...INGRESE SOLO CARACTERES NUMERICOS\033[0m"
 
 homoclave = "xxx"
-
 prohibit_list = ['BUEI', 'BUEY', 'CACA', 'CACO', 'CAGA','CAGO', 'CAKA', 'CAKO', 'COGE', 'COJA', 'COJE', 'COJI', 'COJO', 'CULO', 'FETO', 'GUEY', 'JOTO', 'KACA', 'KACO', 'KAGA', 'KAGO', 'KOGE', 'COJO', 'KAKA', 'KULO', 'MAME', 'MAMO', 'MEAR', 'MEAS', 'MEON', 'MION', 'MOCO', 'MULA', 'PEDA','PEDO', 'PENE', 'PUTA', 'PUTO', 'QULO', 'RATA','RUIN']
 
 # Primer termino
-
 primer_termino = first_ln[ :2]
 
 # Segundo termino
-
 segundo_termino = second_ln[ :1]
 
 # Tercer Termino
@@ -84,21 +79,18 @@ else:
 	tercer_termino = first_name[ :1]
 
 # Cuarto terminno
-
 if len(year) == 4:
 	cuarto_termino = year[2: ]
 else:
 	cuarto_termino = year
 
 # Quinto termino
-
 if len(mes) == 1:
 	quinto_termino = "0" + str(mes)
 else:
 	quinto_termino = mes
 
 # Sexto termino
-
 if len(dia) == 1:
 	sexto_termino = "0" + str(dia)
 else:
