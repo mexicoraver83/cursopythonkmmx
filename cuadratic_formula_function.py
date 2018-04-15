@@ -3,11 +3,9 @@
 import math
 
 # Formula cuadratica
-
 def cuadratica():
 
 	# Obteniendo el coheficinete de los terminos
-
 	a = float(input("Ingrese el \033[32;1mPRIMER\033[0m coheficiente \033[32;1ma\033[0m: " ))
 	b = float(input("Ingrese el \033[33;1mSEGUNDO\033[0m coheficiente \033[33;1mb\033[0m: " ))
 	c = float(input("Ingrese el \033[34;1mTERCER\033[0m coheficiente \033[34;1mc\033[0m: " ))
